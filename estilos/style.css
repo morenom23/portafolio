@@ -383,12 +383,15 @@ h2 .skills li .icon:hover{
 }
 .proyectos{
     display: flex;
+    margin: 0 auto;
+    width: 100%;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
     padding: 20px 0px;
     background-color: var(--blanco-color);
     flex-wrap: wrap;
+    
 }
 .proyectoCard{
     display: flex;

@@ -1,0 +1,526 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@400;500;600;700&display=swap');
+/* font-family: 'Mochiy Pop One', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../medios/win11.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+    /* width: 20%; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+}
+.container .box_login:hover{
+    box-shadow: 0 0 10px rgb(20, 180, 201);
+}
+.container .box_login{
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    box-shadow: 0 0 10px white;
+    border-radius: 10px;
+    animation: animeimg 1.5s ease forwards;
+    animation-delay: 0s;
+    transition: .5s all ease;
+    /* display: none; */
+}
+
+.container h2{
+    margin-bottom: 15px;
+    color: white;
+}
+
+.box_login .usuario , .contraseña{
+    display: flex;
+    margin-top: 10px; 
+    padding: 10px 5px;
+    /* border: 1px solid blue; */
+
+}
+
+.box_login input{
+    margin-left: 10px;
+    padding-left: 5px;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: 0px;
+    border-bottom: 2px solid white;
+    /* transition: all .5s ease ;
+    animation: anime 0.7s ease;
+    animation-delay: 0s; */
+    /* animation-delay: calc(.1s * var(--i)); */
+
+    
+}
+.box_login img{
+    transition: all .5s ease ;
+    animation: anime 0.7s ease;
+    animation-delay: 0.2s;
+}
+
+.box_login input::placeholder{
+    color: white;
+    
+}
+.box_login button{
+    margin-top: 15px;
+    padding: 5px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+.box_login button:hover{
+    background-color: rgb(20, 180, 201) ;
+    color: white;
+}
+
+.box_login p{
+    color: rgb(158, 157, 157);
+    margin: 20px 10px 0px 10px;
+    
+}
+
+.box_login p a{
+    color: black;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.box_login p a:hover{
+    color: rgb(20, 180, 201); ;
+    
+}
+
+#verifique{
+    background-color: rgb(9, 165, 185);
+    color: white;
+    padding: 0px 10px;
+    border-radius: 10px;
+    
+    
+}
+
+/* --------VENTANA MODAL---------- */
+
+
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+}
+.form2{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 20px 10px;
+    border-radius: 7px;
+    background-color: black;
+    color: rgb(158, 157, 157);
+    box-shadow: 0 0 10px rgb(20, 180, 201);
+    animation: animeimg 1.5s ease forwards;
+    animation-delay: 0s;
+    transition: .5s all ease;
+    display: none;
+    
+
+}
+
+
+.form2{
+    color: white;
+}
+.form2 .form-input{
+    margin: 5px 0px;
+    
+}
+.form2 label{
+    margin-right: 5px;
+    color: white;
+    font-size: 16px;
+}
+.form2 input{
+    padding: 3px 5px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    
+}
+.form2 button{
+    padding: 5px 10px;
+    margin: 20px 0px 10px 0px ;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(20, 180, 201);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.form2 input:hover{
+    box-shadow: 0 0 10px rgb(20, 180, 201);
+}
+
+.form2 button:hover{
+    background-color: white;
+    
+}
+.form2 p{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    /* border: 1px solid blueviolet; */
+}
+
+
+/* -----------APP INICIO------------ */
+
+.app{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding: 10px 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px white;
+    background-color: black;
+    width: 19%;
+    animation: animeApp 1.5s ease forwards;
+    animation-delay: 0s;
+    transition: .5s all ease;
+    display: none;
+}
+.app .linea{
+    width: 20%;
+    margin-bottom: 5px;
+    height: 3px;
+    border-radius: 40%;
+    background-color: rgb(110, 110, 110);
+}
+.app .linea2{
+    width: 10%;
+    opacity: .4;
+    margin-top: 30px;
+    
+}
+.app #bienvenida{
+    margin: 20px 0px 5px 0px;
+    color: rgb(158, 157, 157);
+    
+}
+
+.app .saldoDisponible{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(158, 157, 157);
+    border-radius: 5px;
+    padding-right: 5px;
+}
+
+
+.app h3{
+    color: rgb(9, 165, 185);
+}
+.app .operaciones{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.app .operaciones .operacion_img{
+    margin: 10px 5px;
+    text-align: center;
+    background-color: rgb(110, 110, 110);
+    padding: 5px 3px 0px 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .4s ease;
+    
+}
+.app #lineMovimientos{
+    margin-bottom: 10px;
+    width: 10%;
+    opacity: .4;
+}
+.app .opciones a{
+    color: rgb(110, 110, 110);
+    /* text-decoration: none; */
+    
+}
+.app .opciones a:hover{
+    color: rgb(9, 165, 185);
+}
+.app .operaciones .operacion_img:hover{
+    background-color: rgb(9, 165, 185);
+    color: white;
+}
+
+.opciones .opr{
+    margin: 20px 0px 10px 0px;
+    color: rgb(158, 157, 157);
+}
+
+.app .operaciones .operacion_img p{
+    margin-top: -5px;
+}
+
+.app .cerrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px 5px 0px;
+    transition: .4s ease;
+    
+}
+
+/* -----------VENTANAS MODAL------------ */
+.cont-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(110, 110, 110);
+    font-family: 'Poppins', sans-serif;
+}
+.cont-modal .contenido-modal{
+    background-color: rgb(20, 180, 201);
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    animation: animeimg 1.5s ease forwards;
+    animation-delay: 0s;
+    transition: .5s all ease-out;
+    position: absolute;
+    /* display: none; */
+}
+#modal1{
+    display: none;
+}
+#modal2{
+    display: none;
+}
+#modal3{
+    display: none;
+}
+
+#btn-modal{
+    display: none;
+}
+
+#sinSaldo{
+    margin: 0px 3px;
+    background-color: black;
+    color: rgb(110, 110, 110);
+    border-radius: 5px;
+    padding: 0px 2px;
+    display: none;
+    animation: sinSaldo 5s ease forwards;
+    transition: .1s all ease-in-out;
+    animation-delay: 0s;
+}
+
+.contenido-modal h4{
+    margin: 5px 0px;
+    color: rgb(58, 57, 57);
+}
+.contenido-modal input{
+    width: 80%;
+    margin-bottom: 5px;
+    padding: 3px 0px 3px 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: .3s ease;
+}
+.contenido-modal input:hover{
+    box-shadow: 0 0 10px rgb(78,78,77);
+}
+.contenido-modal button{
+    margin: 5px 0px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(204, 201, 201);
+}
+.contenido-modal button:hover{
+    background-color: rgb(121, 119, 119);
+    color: white;
+}
+
+/* MOVIMIENTOS */
+.app .movimientos{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin-top: 4px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    /* border: 1px solid purple; */
+    padding: 0px 5px;
+    font-size: 13px;
+    animation: movimientos 2s ease-in-out;
+    transition: .2s all ;
+    /* animation-delay: 0.1s; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: none;
+    
+}
+.opciones .titleMovimientos p{
+    color: rgb(141, 139, 139);
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+.opciones .titleMovimientos p:hover{
+    color: rgb(20, 180, 201);
+}
+
+.app #mtoCerrar{
+    padding-top: 3px;
+    display: none;
+    animation: movimientos 1s ease-in-out;
+    transition: .2s all ;
+}
+
+.app .mvmtoCerrar button{
+    padding: 2px 5px;
+    cursor: pointer;
+    
+    
+    
+}
+
+
+
+.app .cerrar img:hover{
+    background-color: rgb(9, 165, 185);
+    
+}
+.app .cerrar img{
+    background-color: rgb(110, 110, 110);
+    border-radius: 20px;
+}
+
+/* -----------MEDIA------------ */
+
+@keyframes anime{
+    
+    0%{
+        transform: translateX(-400px);
+        opacity: 0;
+        
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes animeimg{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+        
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+        
+    }
+}
+@keyframes sinSaldo{
+    0%, 90%{
+        transform: scale(.9);
+        opacity: 1;
+    }
+    100%{
+        /* transform: scale(0); */
+        display: none;
+        opacity: 0;
+        
+    }
+}
+@keyframes movimientos {
+    0%{
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+/* @keyframes movimientosA {
+    0%, 90%{
+        transform: scale(.9);
+        opacity: 1;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+    }
+    
+} */
+
+
+@keyframes animeApp{
+    
+    0%{
+        transform: translateY(-400px);
+        opacity: 0;
+        
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
