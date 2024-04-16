@@ -1,0 +1,590 @@
+
+/*
+font-family: 'Mochiy Pop One', sans-serif;
+------------------------------------------ 
+font-family: 'Marck Script', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+.header{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 7px 13px 40px rgb(226, 225, 225);
+}
+
+.logo{
+    height: 100%;
+    background-color: white;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    /* background-image: linear-gradient(to left, red, blue); */
+    
+}
+
+.menu-principal{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+.menu-principal li a{
+    display: block;
+    padding: 7px 20px;
+    color: #070A52;
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+}
+.submenu{
+    position: absolute;
+    display: none;
+    background: transparent;
+    list-style: none;
+    width: 113px;
+}
+.submenu li a{
+    color: rgb(202, 201, 201);
+    font-family: 'Righteous';
+    padding: 10px 3px 10px 5px;
+    font-size: 15px;
+}
+
+.menu-principal li:hover .submenu{
+    display: block;
+    background-color: #242955;
+    
+}
+.menu-principal li a:hover{
+    border-bottom: 1px solid #070A52;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.submenu li:hover{
+    border-radius: 60px;
+}
+
+.submenu li a:hover{
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+}
+
+.redes{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.redes a{
+    padding: 5px 5px 0px 5px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+.redes a img{
+    width: 25px;
+    height: 25px;
+    animation: anim 2s infinite;
+}
+.redes a:hover{
+    transform: scale(1.2);
+}
+
+h1{
+    /* padding-top: 20px; */
+    padding: 60px 0px 40px 0px;
+    background-color: rgb(250, 248, 249);
+    /* font-family: 'Righteous', cursive; */
+    font-family: 'Handlee', cursive;
+    font-size: 35px;
+    color: #070A52;
+}
+h1 span{
+    color: red;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+/* ESTILOS PARA EL .SLIDER */
+
+.slider{
+    width: 95%;
+    margin: 15px auto 0;
+    overflow: hidden;
+    
+}
+.slider ul{
+    display: flex;
+    width: 400%;
+    animation: anime 15s infinite alternate ease-in-out;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 520px;
+    /* border-radius: 10px; */
+}
+@keyframes anime {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+/*ESTILOS PARA LAS CARDS*/
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    overflow: hidden;
+    background-color: #fcf9ed;
+    margin-bottom: 30px;
+    
+}
+.cards{
+    position: relative;
+    width: 25%;
+    height: 90%;
+    margin: 15px;
+    background: transparent;
+    overflow: hidden;
+    box-shadow: 7px 13px 30px #6161c0;
+    border-radius: 10px;
+}
+
+.front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+}
+.cards p{
+    color: white;
+    font-size: 40px;
+}
+
+.cards .front p{
+    font-family: 'Righteous', cursive;
+}
+.cards div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.cards:hover{
+    box-shadow: 7px 13px 30px rgb(145, 138, 245);
+}
+.cards .front{
+    transform: perspective(500px) rotateY(0deg);
+}
+.cards .back{
+    flex-direction: column;
+    background-color: #545B77;
+    transform: perspective(500px) rotateY(180deg);
+}
+.cards .back hr{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.cards .back p{
+    font-size: 18px;
+    text-align: justify;
+    margin: 22px;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Handlee', cursive;   
+}
+.cards .back a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Handlee';
+}
+
+.cards .back a:hover{
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+.cards:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+}
+.cards:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+    
+}
+
+/*ESTILOS PARA DIV .CUERPO*/
+
+.relleno{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 100px;
+}
+.relleno .rellenotext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px;
+    font-family:'Handlee', cursive;
+    text-align: justify;
+}
+
+.line{
+    margin: auto;
+    width: 10%;
+    height: 5px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    border-radius: 5px;
+    background-color: #070A52;
+}
+
+footer{
+    height: 300px;
+    background-color: #070A52;
+    color: white;
+    font-family: 'Handlee', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .items2foter{
+    width: 66%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around; 
+    background-color: rgb(247, 247, 252);
+    color: #070A52;
+    margin-top: 25px;
+    border-radius: 50px;
+    
+}
+footer .items2foter .email{
+    padding: 5px;
+    width: 250px;
+    margin-left: 10px;
+    border: none;
+    border: 1px solid #ccc9c9;
+    border-radius: 5px;
+    background-color: transparent;
+}
+footer .items2foter .boton{
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    border: 1px solid #ccc9c9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer .items2foter .boton:hover{
+    background-color: #cecbcb;
+}
+
+footer> ul> li{
+    margin: 20px;
+    list-style: none;
+    margin-left: 30px;
+}
+
+footer> ul{
+    padding-top: 10px;
+    display: flex;
+}
+footer> ul> li> a{
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    color: #7e7c7d;
+}
+footer> ul> li> a:hover{
+    color: rgb(226, 218, 218);
+}
+
+footer .newslatter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 15px;
+}
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    background-color: #070A52;
+    flex-direction: column;
+
+}
+.copy p{
+    font-family: 'Handlee',;
+    color: #aaa8a9;
+    
+}
+.copy hr{
+    width: 10%;
+    margin-top: 8px;
+}
+
+/*REDES FOOTER*/
+.redesfoter{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-direction: column;
+}
+.redesfoter p{
+    font-family: 'capriola';
+    color: #aaa8a9;
+}
+
+.redesfoter .iconpieredes{
+    display: flex;
+    width: 90px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+.redesfoter .iconpieredes a{
+    padding: 5px 5px 0px 5px;
+    margin: 5px;
+}
+
+.redesfoter .iconpieredes a img{
+    width: 25px;
+    height: 25px;
+    animation: anim 2s infinite;
+    border-radius: 5px;
+}
+.redesfoter a:hover{
+   transform: scale(1.2);
+    
+}
+
+@media screen and (max-width:768px){
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+        /* background-image: linear-gradient(to left, white, blue, pink, #0C134F); */
+        box-shadow: 7px 13px 40px rgb(226, 225, 225);
+    }
+    .logo{
+        height: 50%;
+        background-color: white;
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    nav{
+        display: flex;
+        margin: auto;
+        background-color: transparent;
+    }
+    .menu-principal{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        
+    }
+    .menu-principal li a{
+        display: block;
+        padding: 7px 20px;
+        color: #070A52;
+        text-decoration: none;
+        font-family: 'Righteous', cursive;
+    }
+    .submenu{
+        position: absolute;
+        display: none;
+        background: transparent;
+        list-style: none;
+        width: 113px;
+    }
+    .submenu li a{
+        font-family: 'Righteous';
+        padding: 10px 3px 10px 5px;
+        font-size: 15px;
+        color: rgb(212, 210, 210);
+    }
+    
+    .menu-principal li:hover .submenu{
+        display: block;
+        background-color: #2a2474;
+    }
+    .menu-principal li a:hover{
+        border-radius: 5px;
+        transition: .2s;
+    }
+    
+    .submenu li:hover{
+        border-radius: 60px;
+        
+    }
+    .submenu li a:hover{
+        border: 1px solid #070A52;
+        text-align: center;
+    }
+
+    /* -------------------------------------------- */
+
+    .slider{
+        width: 95%;
+        margin: 15px auto 0;
+        overflow: hidden;
+    }
+    .slider img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* ----------------------------------- */
+
+    section{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background-color: #fcf9ed;
+        margin-bottom: 30px;
+    }
+    .cards{
+        position: relative;
+        width: 80%;
+        height: 500px;
+        margin: 15px;
+        background: transparent;
+        overflow: hidden;
+        box-shadow: 7px 13px 30px #6161c0;
+        border-radius: 10px;
+    }
+    .cards .back{
+        flex-direction: column;
+        background-color: #545B77;  
+        transform: perspective(500px) rotateY(180deg);
+    }
+    .cards .back hr{
+        display: none;
+    }
+    
+    .cards .back p{
+        width: 60%;
+        font-size: 18px;
+        text-align: justify;
+        margin: 22px;
+        color: white;
+        margin-bottom: 80px;
+        font-family: 'Handlee', cursive;   
+    }
+    .cards .back a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Handlee';
+    }
+    
+    .cards .back a:hover{
+        border: 1px solid white;
+        padding: 5px 10px;
+        border-radius: 7px;
+    }
+    .relleno{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        height: 150px;
+    }
+
+    /* ------------------------------------------- */
+
+    footer .items2foter{
+        width: 80%;
+        height: auto;
+        background-color: rgb(247, 247, 252);
+        color: #070A52;
+        margin-top: 25px;
+        border-radius: 0px;
+        border-radius: 20px;
+    }
+    footer .newslatter{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow: hidden;
+        
+    }
+    footer .items2foter input{
+        margin-top: 15px;
+    }
+    footer .items2foter .email{
+        margin-right: 10px;
+    }
+    .copy p{
+        margin-top: 10px;
+    }
+
+}   

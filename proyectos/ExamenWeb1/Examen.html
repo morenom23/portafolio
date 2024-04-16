@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+
+    <center><div class="title">
+            <center><h2>PIZZAS</h2></center> 
+        </div></center>
+    <div class="container">
+        
+        <form action="" >
+            
+            <label for="">Seleccione una pizza : </label>
+            <select name="" id="opcion">
+                <option value="0">Seleccione..</option>
+                <option value="1">Queso $14.000</option>
+                <option value="2">Jamon y Queso $16.000</option>
+                <option value="3">Especial $20.000</option>
+            </select>
+            
+            <br>
+            <label for="" id="unidades">Unidades a llevar : </label>
+            <input id="cantIngresada" type="number" placeholder="Ingrese la cantidad">
+        
+            <br>
+            <label for="">¿Desea ingrediente extra? </label>
+            <select name="" id="ingrediente">
+                <option value="0">Seleccione..</option>
+                <option value="1">Maiz</option>
+                <option value="2">Queso</option>
+                
+            </select>
+            <br>
+            <br>
+            <center><button onclick="calcular()" type="button">Calcular</button></center>
+        
+
+        </form>
+       
+    </div>
+    <!-- <center><h2 class="factura">Detalles</h2></center> -->
+    <center><div class="resultado">
+        <h3>Factura</h3>
+        <p id="pizaSeleccionada"></p>
+        <p id="costo"></p>
+        <p id="cantidad"></p>
+        <p id="extra"></p>
+        <p id="totalPago" style="color: green;"></p>
+        <p id="gracias"></p>
+    </div></center>
+
+    
+
+    <script src="js/examen.js"></script>
+
+</body>
+</html>

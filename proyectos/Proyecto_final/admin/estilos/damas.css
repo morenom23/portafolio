@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 7px 13px 40px rgb(226, 225, 225);
+}
+
+.logo{
+    height: 100%;
+    background-color: white;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    /* background-image: linear-gradient(to left, red, blue); */
+    
+}
+
+.menu-principal{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+.menu-principal li a{
+    display: block;
+    padding: 7px 20px;
+    color: #070A52;
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+}
+.submenu{
+    position: absolute;
+    display: none;
+    background: transparent;
+    list-style: none;
+    width: 113px;
+}
+.submenu li a{
+    color: rgb(202, 201, 201);
+    font-family: 'Righteous';
+    padding: 10px 3px 10px 5px;
+    font-size: 15px;
+}
+
+.menu-principal li:hover .submenu{
+    display: block;
+    background-color: #242955;
+    
+}
+.menu-principal li a:hover{
+    border-bottom: 1px solid #070A52;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.submenu li:hover{
+    border-radius: 60px;
+}
+
+.submenu li a:hover{
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+}
+
+.redes{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.redes a{
+    padding: 5px 5px 0px 5px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+.redes a img{
+    width: 25px;
+    height: 25px;
+    animation: anim 2s infinite;
+}
+.redes a:hover{
+    transform: scale(1.2);
+}
+.line{
+    margin: auto;
+    width: 10%;
+    height: 5px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    border-radius: 5px;
+    background-color: #070A52;
+}
+
+/* ESTILOS PARA EL CATALOGO-----------------------*/
+.catalogo{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulos .titulo{
+    font-family: 'capriola';
+    color: #1d218b;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+
+.titulo span{
+    color: red;
+    font-size: 27px;
+}
+.container .video {
+    width: 95%;
+    height: 550px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.video video{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    
+}
+.card-deck{
+    width: 32%;
+    padding: 10px; 
+    text-align: center; 
+}
+
+
+.card-deck .card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px #eeeaed ;
+    border: 2px solid rgb(221, 218, 218);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+ .card img{
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 270px;
+    height: 210px;
+}
+.card:hover img{
+    transform: scale(1.05);
+}
+.card-body{
+    padding: 10px;
+}
+
+.card-body h5{
+   padding: 5px;
+}
+
+.catalogo{
+    z-index: -1;
+}
+
+.card-deck .card{
+    z-index: -1;
+}
+
+footer{
+    height: 300px;
+    background-color: #070A52;
+    color: white;
+    font-family: 'Handlee', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .items2foter{
+    width: 66%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around; 
+    background-color: rgb(247, 247, 252);
+    color: #070A52;
+    margin-top: 25px;
+    border-radius: 50px;
+    
+}
+footer .items2foter .email{
+    padding: 5px;
+    width: 250px;
+    margin-left: 10px;
+    border: none;
+    border: 1px solid #ccc9c9;
+    border-radius: 5px;
+    background-color: transparent;
+}
+footer .items2foter .boton{
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    border: 1px solid #ccc9c9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer .items2foter .boton:hover{
+    background-color: #cecbcb;
+}
+
+footer> ul> li{
+    margin: 20px;
+    list-style: none;
+    margin-left: 30px;
+}
+
+footer> ul{
+    padding-top: 10px;
+    display: flex;
+}
+footer> ul> li> a{
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    color: #7e7c7d;
+}
+footer> ul> li> a:hover{
+    color: rgb(226, 218, 218);
+}
+
+footer .newslatter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 15px;
+}
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    background-color: #070A52;
+    flex-direction: column;
+
+}
+.copy p{
+    font-family: 'Handlee',;
+    color: #aaa8a9;
+    
+}
+.copy hr{
+    width: 10%;
+    margin-top: 8px;
+}
+
+/*REDES FOOTER*/
+.redesfoter{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-direction: column;
+}
+.redesfoter p{
+    font-family: 'capriola';
+    color: #aaa8a9;
+}
+
+.redesfoter .iconpieredes{
+    display: flex;
+    width: 90px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+.redesfoter .iconpieredes a{
+    padding: 5px 5px 0px 5px;
+    margin: 5px;
+}
+.redesfoter .iconpieredes a img{
+    width: 25px;
+    height: 25px;
+    animation: anim 2s infinite;
+    border-radius: 5px;
+}
+.redesfoter a:hover{
+   transform: scale(1.2);
+    
+}
+
+
+@media screen and (max-width:768px){
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+        align-items: center;
+        justify-content: space-around;
+        /* background-image: linear-gradient(to left, white, blue, pink, #0C134F); */
+        box-shadow: 7px 13px 40px rgb(226, 225, 225);
+    }
+    .logo{
+        height: 50%;
+        background-color: white;
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    nav{
+        display: flex;
+        margin: auto;
+        background-color: transparent;
+    }
+    .menu-principal{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        
+    }
+    .menu-principal li a{
+        display: block;
+        padding: 7px 20px;
+        color: #070A52;
+        text-decoration: none;
+        font-family: 'Righteous', cursive;
+    }
+    .submenu{
+        position: absolute;
+        display: none;
+        background: transparent;
+        list-style: none;
+        width: 113px;
+    }
+    .submenu li a{
+        font-family: 'Righteous';
+        padding: 10px 3px 10px 5px;
+        font-size: 15px;
+        color: rgb(212, 210, 210);
+    }
+    
+    .menu-principal li:hover .submenu{
+        display: block;
+        background-color: #2a2474;
+    }
+    .menu-principal li a:hover{
+        border-radius: 5px;
+        transition: .2s;
+    }
+    
+    .submenu li:hover{
+        border-radius: 60px;
+        
+    }
+    .submenu li a:hover{
+        border: 1px solid #070A52;
+        text-align: center;
+    }
+    .catalogo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .card-deck{
+        width: 45%;
+        padding: 10px;
+        text-align: center;
+    }
+    .card-deck .card{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+    footer .items2foter{
+        width: 80%;
+        height: auto;
+        background-color: rgb(247, 247, 252);
+        color: #070A52;
+        margin-top: 25px;
+        border-radius: 0px;
+        border-radius: 20px;
+    }
+    footer .newslatter{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow: hidden;
+        
+    }
+    footer .items2foter input{
+        margin-top: 15px;
+    }
+    footer .items2foter .email{
+        margin-right: 10px;
+    }
+    .copy p{
+        margin-top: 10px;
+    }
+}
