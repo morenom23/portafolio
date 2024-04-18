@@ -314,7 +314,7 @@ h2 .skills li .icon:hover{
     margin-bottom: 50px;
     color: var(--texto);
     margin-top: 60px;
-    
+   
 }
 
 .sobremi_info{
@@ -322,6 +322,7 @@ h2 .skills li .icon:hover{
     width: 52%;
     padding: 5px 5px 30px 10px;
     text-align: justify;
+    
 
 }
 .sobremi_info p span{
@@ -379,7 +380,8 @@ h2 .skills li .icon:hover{
     margin-bottom: 12px;
     box-shadow: 0px 5px 5px 0px;
     border-radius: 5px;
-
+    font-size: 1.9em;
+    
 }
 .proyectos{
     display: flex;
@@ -414,34 +416,74 @@ h2 .skills li .icon:hover{
     
 }
 
-.contacto{
-
-    background: white;
+.contacto .desContacto{
+    padding: 10px;
+    color: var(--texto);
+    background-color: white;
+    border-radius: 20px;
     
+}
+.contacto h2{
+    margin-bottom: 7px;
+    color: var(--body-color);
+}
+.iconos_contacto{
+    display: flex;
+    flex-direction: column;
+}
+.iconos_contacto a{
+    display: flex;
+    align-items: center;
+    color: var(--body-color);
+    margin: 5px 0px;
+    
+}
+
+.iconos_contacto a img{
+    width: 25px;
+    height: 25px;
+}
+
+.p_contacto{
+    margin-left: 10px;
 }
 
 footer{
     background-color: var(--body-color);
     height: 300px;
     padding-top: 20px;
-    
+    margin-top: -10px;
 }
 .foot_container{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    
 }
-footer h2{
-    color: var(--item-color);
-}
-footer h3{
+.nombre_footer{
+   
     color: var(--texto);
-    margin-bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+    /* background-color: white;
+    padding: 10px;
+    border-radius: 20px; */
 }
-.foot_container .copyrigth{
+.nombre_footer h2{
+    /* color: var(--item-color); */
+    color: white;
+}
+
+footer .copyrigth{
     color: var(--texto);
-    margin-bottom: 10px;
+    margin: 50px 0px 0px 0px;
+    
+}
+footer .copyrigth p{
+    margin-top: 10px;
+    font-size: 12px;
+
 }
 
 /* ESPACIO PARA LAS MEDIACUERYS */
@@ -488,6 +530,7 @@ footer h3{
     .nav{
         position: fixed;
         z-index: 1;
+        
     }
     .nav__label{
         display: block;
@@ -495,7 +538,7 @@ footer h3{
     }
     .nav__menu{
         position: absolute;
-        top: 80px;
+        top: 60px;
         bottom: 0;
         background-color: rgb(17, 17, 46);
         width: 100%;
@@ -511,9 +554,6 @@ footer h3{
     .nav .check:checked + .nav__menu{
         clip-path: circle(100% at center);
     }
-
-    
-
 
     .cuerpo_entrada{
         /* z-index: -1; */
@@ -539,7 +579,6 @@ footer h3{
         width: 100%;
         opacity: 0.03;
         position: absolute;
-        /* left: 30%; */
         bottom: -50px;
         transform: translateX(-30%);
         transition: bottom 1s, left 1s ease-in-out;
@@ -548,7 +587,6 @@ footer h3{
     } 
     .cuerpo_imag .yo{
         position: relative;
-        /* left: 20%; */
         transform: translateX(-40%);
         transition: bottom 1s, left 1s;
         border-radius: 50%;
@@ -597,7 +635,7 @@ footer h3{
         width: 100%;
         padding: 5px 10px 30px 10px;
         text-align: justify;
-    
+        
     }
     .sobremi_img{
         display: flex;
