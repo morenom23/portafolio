@@ -22,17 +22,17 @@
                 </div>
             </div>
 
-            <label for="menu" class="nav__label">
+            <label for="menu" class="nav__label" onclick="devolver_item()">
                 <img src="medios/bx-menu.svg" alt="" class="labe_image">
             </label>
             
             <input type="checkbox" name="" id="menu" class="check">
     
-            <nav class="nav__menu">
+            <nav id="nav__" class="nav__menu">
                 <a href="" class="nav__item1">INICIO</a>
-                <a href="#sobremi" class="nav__item">SOBRE MI</a>
-                <a href="#wave1" class="nav__item">PROYECTOS</a>
-                <a href="#contacto" class="nav__item">CONTACTO</a>
+                <a href="#sobremi" class="nav__item" id="nav_item">SOBRE MI</a>
+                <a href="#wave1" class="nav__item" id="nav_item">PROYECTOS</a>
+                <a href="#contacto" class="nav__item" id="nav_item" onclick="nav_item()">CONTACTO</a>
             </nav>
         </nav>
     </nav>
@@ -183,6 +183,19 @@
 
 
 </body>
+
+<script>
+    function nav_item(){
+        document.getElementById('nav__').style.display ="none";
+    }
+
+    function devolver_item(){
+        document.getElementById('nav__').style.display ="inline";
+        
+    }
+
+</script>
+
 <footer>
     <div class="foot_container">
         <section class="contacto" id="contacto">
@@ -203,9 +216,7 @@
                             morenoestudio22@gmail.com
                         </p>
                     </a>
-                    <!-- <a href="">
-                        <img src="medios/whatsapp.png" alt="">
-                    </a> -->
+        
                 </div>
                 
             </div>

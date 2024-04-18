@@ -538,18 +538,22 @@ footer .copyrigth p{
     }
     .nav__menu{
         position: absolute;
-        top: 60px;
+        top: 70px;
         bottom: 0;
         background-color: rgb(17, 17, 46);
         width: 100%;
         left: 0;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
         clip-path: circle(0 at center);
         transition: clip-path .6s ease-in-out;
+        height: 90vh;
         
+    }
+    .nav__item , .nav__item1{
+        margin: 20px;
     }
     .nav .check:checked + .nav__menu{
         clip-path: circle(100% at center);
