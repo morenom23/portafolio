@@ -766,7 +766,7 @@ footer .copyrigth p{
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 500px){
     .nav__menu{
         position: absolute;
         top: 0px;
@@ -913,7 +913,7 @@ footer .copyrigth p{
     }
 
     .contacto{
-        width: 70%;
+        width: 80%;
         overflow: hidden;
     }
 
