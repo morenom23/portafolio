@@ -454,24 +454,31 @@ footer{
     padding-top: 20px;
     margin-top: -10px;
 }
+
+footer .ir_arriba{
+    float: right;
+    margin-right: 30px;
+    background-color: white;
+    padding: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
 .foot_container{
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: space-around;
     
 }
 .nombre_footer{
-   
     color: var(--texto);
     text-align: center;
     font-size: 14px;
-    /* background-color: white;
-    padding: 10px;
-    border-radius: 20px; */
+    
 }
+
 .nombre_footer h2{
-    /* color: var(--item-color); */
     color: white;
 }
 
@@ -756,5 +763,66 @@ footer .copyrigth p{
         padding: 2px;
         width: 30px;
         height: 30px;
+    }
+}
+
+@media (max-width: 350px){
+    .nav__menu{
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        background-color: rgb(17, 17, 46);
+        width: 26%;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path .6s ease-in-out;
+        height: 40vh;
+        border-radius: 0 0 10px 10px;
+        overflow: hidden;
+        z-index: -1;
+        padding-top: 50px;
+    }
+    
+    .nav__item , .nav__item1{
+        margin: 10px;
+        font-size: 12px;
+    }
+    
+    .nav .check:checked + .nav__menu{
+        clip-path: circle(100% at center);
+    }
+
+    .cuerpo{
+        /* display: flex; */
+        margin: 0 auto;
+        width: 100%;
+        /* flex-direction: column;
+        justify-content: space-between; */
+        padding: 40px 5px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 60px;
+        border: 1px solid blueviolet;
+        
+    }
+    .cuerpo_entrada{
+        color: var(--color-tex);
+        padding: 5px;
+        animation: animeCuerpo 1s ease forwards;
+        animation-delay: .1s;
+        margin-top: 80px;
+        width: 100%;
+        
+    }
+
+    .cuerpo_imag{
+        display: none;
     }
 }
