@@ -766,13 +766,13 @@ footer .copyrigth p{
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 480px){
     .nav__menu{
         position: absolute;
         top: 0px;
         bottom: 0;
         background-color: rgb(17, 17, 46);
-        width: 26%;
+        width: 20%;
         right: 0;
         display: flex;
         justify-content: center;
@@ -809,7 +809,7 @@ footer .copyrigth p{
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 60px;
-        border: 1px solid blueviolet;
+        
         
     }
     .cuerpo_entrada{
@@ -838,7 +838,6 @@ footer .copyrigth p{
         margin-bottom: 50px;
         color: var(--texto);
         margin-top: 60px;
-        border: 1px solid rebeccapurple;
        
     }
     
@@ -864,7 +863,7 @@ footer .copyrigth p{
         background-color: white;
         width: 100%;
         margin-bottom: 0px;
-        border: 1px solid red;
+       
     }
     
     .wave2{
@@ -878,7 +877,6 @@ footer .copyrigth p{
     .titleProyectos{
         margin-top: 0;
         color: var(--primary-color);
-        /* border: 1px solid red; */
         width: 50%;
         margin-bottom: 0px;
         box-shadow: 0px 5px 5px 0px;
@@ -898,7 +896,6 @@ footer .copyrigth p{
         padding: 70px 0px 20px 0px;
         background-color: var(--blanco-color);
         flex-wrap: wrap;
-        border: 1px solid red;
         
     }
 
@@ -912,13 +909,12 @@ footer .copyrigth p{
         border-radius: 10px;
         box-shadow: 0px 0px 5px 0px;
         transition: .3s;
-        border: 1px solid red;
+    
     }
 
     .contacto{
-        width: 95%;
-        border: 1px solid red;
-        
+        width: 70%;
+        overflow: hidden;
     }
 
     footer{
@@ -958,6 +954,7 @@ footer .copyrigth p{
         border-radius: 20px;
         overflow: hidden;
         width: 100%;
+        
         
     }
     
