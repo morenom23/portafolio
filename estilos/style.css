@@ -861,6 +861,8 @@ footer .copyrigth p{
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-style: normal;
+        line-height: 1.4;
+        font-size: 17px;
     }
 
     .wave1{
