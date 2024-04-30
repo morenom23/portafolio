@@ -996,4 +996,8 @@ footer .mockup{
         
     }
 
+    footer .mockup{
+        display: none;
+    }
+
 }
