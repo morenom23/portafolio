@@ -9,18 +9,14 @@
 </head>
 <body>
     <div class="container">
-        <!-- <div class="baner">
-            <div class="img">
-                
-            </div>
-        </div> -->
+       
         <div class="menu">
             <div class="logo">
                 <!-- <img src="Medios/logoshopp.png" alt=""> -->
             </div>
             
 
-            <div class="menu_items">
+            <div class="menu_items" id="menu_items">
                 <a href="" class="nav__item">Inicio</a>
                 <a href="" class="nav__item">Alimentos</a>
                 <a href="" class="nav__item">Snacks</a>
@@ -41,6 +37,10 @@
                 <span> /</span>
                 <a href="" class="registro">Registrar</a>
             </div>
+
+            <div class="icon_menu" >
+                <img src="Medios/menu.png" alt="" onclick="x_menu()" id="x_menu">
+            </div>
         </div>
         
         <section class="slider">
@@ -59,7 +59,7 @@
                 <p>
                     ¡Al paraíso de las mascotas, donde los sueños peludos se hacen realidad! <br>
                     ¿Qué encontrarás aquí?
-                    <!-- Explora nuestro catálogo. -->
+                    
                 </p>
                 <div class="flechas">
                     <img class="flecha" src="Medios/flecha-hacia-abajo.png" alt="">
@@ -361,5 +361,25 @@
         </div>
         
     </div>
+
+    <script>
+        
+        function x_menu(){
+            var cambiarIconMnenu = document.getElementById('x_menu');
+
+            if (cambiarIconMnenu.src.match('./Medios/menu.png')){
+                cambiarIconMnenu.src = './Medios/x.png'
+                document.getElementById('x_menu')
+                document.getElementById('menu_items').style.display="inline-flex"
+                
+            }else{
+                cambiarIconMnenu.src = './Medios/menu.png'
+                document.getElementById('x_menu')
+                document.getElementById('menu_items').style.display="none"
+            }
+        }
+
+    </script>
+
 </body>
 </html>

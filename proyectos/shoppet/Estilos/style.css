@@ -29,9 +29,7 @@ familia de fuentes: 'M PLUS Redondeado 1c', sans-serif; 400,500,800
     height: 60px;
     align-items: center;
     justify-content: space-between;  
-    /* position: sticky;
-    top: 0; */
-    /* box-shadow: 7px 13px 50px var(--color_primario); */
+    
 }
 .menu_items{
     /* border: 1px solid red;  */
@@ -60,7 +58,6 @@ familia de fuentes: 'M PLUS Redondeado 1c', sans-serif; 400,500,800
 
 .logo{
     background-image: url(../Medios/log002.png);
-    /* border: 1px solid burlywood; */
     height: 60px;
     width: 160px;
     background-position: center;
@@ -84,7 +81,7 @@ familia de fuentes: 'M PLUS Redondeado 1c', sans-serif; 400,500,800
     transition: .5s ;
     cursor: pointer;
     border: 1px solid var(--color_texto);
-    /* transform: translateX(130px); */
+    
 }
 
 .btn:hover{
@@ -122,7 +119,7 @@ familia de fuentes: 'M PLUS Redondeado 1c', sans-serif; 400,500,800
 
 .buscar:hover input{
     width: 150px;
-    /* padding-left: 40px; */
+    
 
 }
 .btn:hover img{
@@ -149,12 +146,20 @@ familia de fuentes: 'M PLUS Redondeado 1c', sans-serif; 400,500,800
 .login .registro{
     margin-left: 3px;
 }
+
+.icon_menu{
+    margin-right: 15px;
+    text-align: center;
+    display: flex;
+    border-radius: 25px;
+    display: none;
+}
+
 section{
     overflow: hidden;
 }
 .sider{
     width: 100%;
-    /* height: 300px; */
     overflow: hidden;
     
 }
@@ -184,7 +189,7 @@ section{
     height: 3px;
     width: 50px;
     margin: 0 3px;
-    /* border-color: var(--color_texto2); */
+    
 }
 .bienvenida{
     display: flex;
@@ -192,14 +197,13 @@ section{
     align-items: center;
     justify-content: center;
     margin: 70px 0 20px 0;
-    /* border: 1px solid purple; */
+    
 }
 .bienvenida p{
     font-size: 1.5em;
     color: var(--color_texto3);
     font-family:'M PLUS Redondeado 1c', sans-serif;
     width: 70%;
-    /* border: 1px solid blue; */
     text-align: center;
     
 }
@@ -213,13 +217,13 @@ section{
 }
 
 .cards{
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
+
 .cards .card{
     display: flex;
     flex-direction: column;
@@ -232,6 +236,7 @@ section{
     cursor: pointer;
     margin: 13px 7px;
 }
+
 .cards .card img{
     width: 100%;
     height: 100%;
@@ -240,6 +245,7 @@ section{
     object-fit: cover;
     
 }
+
 .cards .card img:hover{
     transform: scale(1.2);
     margin-left: 15px;
@@ -251,6 +257,7 @@ section{
     font-size: 1.5em;
     margin-top: 60px;
 }
+
 .productos_destacados{
     display: flex;
     width: 80%;
@@ -260,8 +267,8 @@ section{
     margin: 25px 0px ;
     overflow: hidden;
     
-    
 }
+
 .productos_destacados .productos{
     width: 180px;
     height: 360px;
@@ -271,7 +278,6 @@ section{
     padding: 5px 3px 10px 3px;
     text-align: center;
     margin-top: 20px;
-    /* overflow: hidden; */
     transition: 0.3s;
     font-family: 'Poppins', sans-serif;
     color: var(--color_texto2);
@@ -284,6 +290,7 @@ section{
     height: 68%;
     border-bottom: 1px groove #d5d5d6;
 }
+
 .productos a{
     background-color: var(--color_primario);
     padding: 0 10px;
@@ -292,19 +299,21 @@ section{
     text-decoration: none;
     transition: 0.5s;
     
-    
 }
+
 .productos h4{
     margin-bottom: 5px;
 }
+
 .agregar{
     transition: 0.4s;
 }
+
 .productos:hover{
     border-color: #9a7ace;
-    /* transform: scale(1.1); */
     
 }
+
 .agregar:hover {
     transform: scale(1.2);
     
@@ -325,11 +334,13 @@ section{
     font-family: 'Chivo', sans-serif;
     color: var(--color_primario);
     margin-top: 60px;
-    /* background-color: var(--color_primario); */
+    
 }
+
 .newslatter span{
     color: #FFB000;
 }
+
 .newslatter .email{
     
     
@@ -341,7 +352,7 @@ section{
     border-radius: 5px;
     border: groove;
     color: var(--color_texto2);
-    /* border-color: #cececc; */
+    
 }
 
 
@@ -358,20 +369,21 @@ form ::placeholder{
     transform: translate(10px);
 }
 
-
 .motivos{
     font-family: 'Poppins', sans-serif;
     color: var(--color_primario);
     font-size: 1.5em;
     margin-top: 90px;
     margin-bottom: 40px;
-    /* border: 1px solid brown; */
+    
 }
+
 .todo{
     font-family: 'Poppins', sans-serif;
     color: var(--color_primario);
     font-size: 2em;
 }
+
 .seccion2{
     display: flex;
     background-color: #fbfbfc;
@@ -380,21 +392,25 @@ form ::placeholder{
     margin-bottom: 30px;
 
 }
+
 .seccion2 .card{
     text-align: center;
     width: 225px;
     /* border: 1px solid green; */
 }
+
 .seccion2 .card h4{
     margin-top: 13px;
     font-family: 'Poppins', sans-serif;
     color: var(--color_texto3);
 
 }
+
 .seccion2 .card p{
     font-family: 'Chivo', sans-serif;
     color: var(--color_texto2);
 }
+
 .card img{
     width: 65px;
     height: 65px;
@@ -426,6 +442,7 @@ footer{
     padding: 0 20px 20px 20px;
     justify-content: space-between;
 }
+
 .logoPie{
     height: 100px;
     width: 200px;
@@ -434,8 +451,8 @@ footer{
     background-position: center;
     background-size: cover;
     
-    
 }
+
 .redes{
     margin-top: 10xpx;
     font-family: 'Poppins', sans-serif;
@@ -443,6 +460,7 @@ footer{
    
     
 }
+
 .redes img{
     margin: 10px 5px;
     border-radius: 10px;
@@ -451,6 +469,7 @@ footer{
     border: 1px solid #cececc;
     
 }
+
 .redesp{
     width: 80%;
     text-align: center;
@@ -475,10 +494,10 @@ footer{
 .div2{
     display: flex;
     height: 95%;
-    /* border: 1px solid black; */
     margin-top: 20px;
     
 }
+
 footer .lista{
     height: 95%;
     display: flex;
@@ -494,19 +513,22 @@ footer .lista{
     font-family: 'Poppins', sans-serif;
     color:#FFB000;
     margin-bottom: 7px;
-    /* width: 100%; */
+    
     
 }
+
 .lista ul{
     margin-bottom: 10px;
     margin-right: 20px;
 }
+
 .lista ul a{
     color: #cececc;
     text-decoration: none;
     font-family: 'Chivo', sans-serif;
 
 }
+
 .lista ul a:hover{
     color: var(--color_texto);
 }
@@ -520,14 +542,15 @@ footer .mockup{
     border-radius: 10px;
     margin-left: 70px;
 }
+
 .mockup_text h3{
     font-family: 'Poppins', sans-serif;
     line-height: 1;
     font-size: 2.5em;
     width: 300px;
-    /* color: #FFB000; */
     color: var(--color_texto);
 }
+
 .mockup_text p{
     font-family: 'Chivo', sans-serif;
     font-size: 16px;
@@ -535,13 +558,14 @@ footer .mockup{
     width: 290px;
     margin-top: 20px;
 }
+
 .mockup_text p span{
     color: #FFB000;
 }
+
 .mockup input{
     padding: 7px 10px;
     width: 120px;
-    /* border-radius: 7px; */
     border-style: none;
     font-family: 'Poppins', sans-serif;
     color: var(--color_texto);
@@ -550,22 +574,25 @@ footer .mockup{
     border-radius: 4px 60px 0 4px;
 
 }
+
 .mockup input:hover{
     cursor: pointer;
     background-color: #FFB000;
     color: var(--color_texto);
     
 }
+
 .mockup .estrellas{
     display: flex;
     margin-top: 10px;
-    /* border: 1px solid black; */
     align-items: center;
     
 }
+
 .mockup .estrellas img{
     margin-right: 7px;
 }
+
 .mockup .piemockup{
     display: flex;
     margin-top: 30px;
@@ -573,23 +600,23 @@ footer .mockup{
     border: 1px groove;
     border-radius: 4px;
     background-color: var(--color_texto);
-    
 
 }
+
 .piemockup h6{
     color: var(--color_primario);
     font-family: 'Chivo', sans-serif;
     transform: translate(60px);
-    /* background-color: var(--color_primario); */
     padding: 3px 5px;
     
 }
+
 .footer2{
     height: 50px;
     background-color: var(--color_primario);
-    /* border: 1px solid white; */
     padding-top: 5px;
 }
+
 .footer2 p ,a{
     font-family: 'Chivo', sans-serif;
     color: #9a7ace;
@@ -641,9 +668,6 @@ footer .mockup{
     }
     .logo{
         background-image: url(../Medios/log002.png);
-        /* border: 1px solid burlywood; */
-        /* height: 50px;
-        width: 140px; */
         height: 45px;
         width: 130px;
         background-position: center;
@@ -722,9 +746,8 @@ footer .mockup{
         height: auto;
         background-color: var(--color_primario);
         margin-top: 30px;
-        /* padding: 0 20px 20px 20px; */
         justify-content:left;
-        border: 2px solid black;
+    
     }
     .div1pie{
         width: 180px;
@@ -752,7 +775,6 @@ footer .mockup{
         width: 590px;
         flex-wrap: wrap;
         height: auto;
-        border: 1px solid red;
         margin-top: 20px;
         margin-left: 20px;
         overflow: hidden;
@@ -764,19 +786,15 @@ footer .mockup{
         width: 45%;
         height: 300px;
         float: left;
-        /* height: 30%; */
         display: flex;
-        /* flex-direction: row; */
         flex-wrap: wrap;
         margin: 0 10px;
-        /* overflow: hidden; */
-        
         
     }
+
     footer .mockup{
         display: flex;
         width: 100%;
-        
         margin-top: 50px;
         height: 300px;
         overflow: hidden;
@@ -784,7 +802,6 @@ footer .mockup{
         padding: 10px;
         border-radius: 10px;
         margin-left: 0px;
-        border: 1px solid red;
         
     }
 
@@ -792,7 +809,6 @@ footer .mockup{
     .footer2{
         height: 50px;
         background-color: var(--color_primario);
-        /* border: 1px solid white; */
         padding-top: 5px;
         display: none;
     }
@@ -805,6 +821,68 @@ footer .mockup{
         color: var(--color_primario);
         font-size: 1.7em;
         text-align: center;
+    }
+
+    .menu{
+        position: fixed;
+        margin-right: 0px;
+    }
+    .menu_items{
+        padding: 3px;
+        background-color: var(--color_primario);
+        border-radius: 0px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: visible;
+        height: 300px;
+        z-index: 1;
+        padding-top: 160px;
+        border-radius: 0px 0px 0px 10px;
+        position: absolute;
+        margin-left: 82%;
+        display: none;
+    }
+
+
+    .menu_items a{
+        color: var(--color_primario);
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        font-weight: 550;
+        text-decoration: none;
+        margin: 0 3px;
+        padding: 3px 6px;
+        transition: 0.5s;
+        color: white;
+        
+    }
+
+    .menu_items a:hover{
+        transform: scaleY(1);
+        background-color: wheat;
+        transition: none;
+        text-decoration: none;
+    }
+
+    .menu .login{
+        display: none;
+    }
+
+
+    .slider li{
+        margin-top: 50px;
+    }
+
+    .icon_menu{
+        margin-right: 23px;
+        text-align: center;
+        display: inline-flex;
+        cursor: pointer;
+        z-index: 1;
+        border-radius: 10px;
     }
 
     .bienvenida p{
@@ -895,7 +973,6 @@ footer .mockup{
         width: 99%;
         flex-wrap: wrap;
         height: auto;
-        border: 1px solid red;
         margin-top: 20px;
         margin-left: 0px;
         overflow: hidden;
@@ -907,7 +984,6 @@ footer .mockup{
         width: 50%;
         height: 300px;
         display: flex;
-        /* flex-direction: column; */
         flex-wrap: wrap;
         /* margin: 0 20px; */
         margin: 0px;
