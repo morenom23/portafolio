@@ -688,6 +688,12 @@ footer .mockup{
 
     /* Cards */
 
+    .seccion2{
+        flex-wrap: wrap;
+    }
+
+
+
     .cards{
         /* border: 1px solid black; */
         display: flex;
@@ -699,17 +705,13 @@ footer .mockup{
         width: 97%;
         
     }
-    .cards .card{
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        width: 340px;
-        padding: 3px;
-        border: 1px groove;
-        border-radius: 15px;
-        overflow: hidden;
-        cursor: pointer;
-        margin: 13px 7px;
+
+    .seccion2 .card {
+        text-align: center;
+        width: 285px;
+        margin: 0px 10px 40px 10px;
+        
+        
     }
 
     /* newslatter */
@@ -722,7 +724,6 @@ footer .mockup{
         align-items: center;
         justify-content: space-around;
         border-radius: 20px;
-        /* border-color: #5c3c97; */
         font-family: 'Chivo', sans-serif;
         color: var(--color_primario);
         margin-top: 60px;
@@ -753,8 +754,6 @@ footer .mockup{
         width: 180px;
         height: 290px;
         align-items: center;
-        /* overflow: hidden; */
-        border: 2px solid rosybrown;
         margin-left: -10px;
         
     }
@@ -763,22 +762,19 @@ footer .mockup{
         width: 100%;
         overflow: hidden;
         background-image: url(../Medios/log002.png);
-        /* background-position: center; */
         background-size: cover;
         background-repeat: no-repeat;
           
-        
     }
+
     .div2{
         display: flex;
-        /* flex-direction: column; */
         width: 590px;
         flex-wrap: wrap;
         height: auto;
         margin-top: 20px;
         margin-left: 20px;
         overflow: hidden;
-        /* display: none; */
         
     }
    
@@ -976,6 +972,7 @@ footer .mockup{
         margin-top: 20px;
         margin-left: 0px;
         overflow: hidden;
+        margin-bottom: 50px;
         /* display: none; */
         
     }
@@ -985,10 +982,17 @@ footer .mockup{
         height: 300px;
         display: flex;
         flex-wrap: wrap;
-        /* margin: 0 20px; */
         margin: 0px;
         overflow: hidden;
-        /* border: 1px solid black; */
+        
+        
+    }
+
+    .div1pie{
+        width: 250px;
+        height: 290px;
+        align-items: center;
+        margin: 0 auto;
         
     }
 
